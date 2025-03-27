@@ -5,13 +5,16 @@ using namespace std;
 int main() {   
     int a, b, c;
     float* coordenadas = new float[b * 3];
+    int* verticesPorCara = new int[c];
+    int** caras = new int*[c];
 
 
     do {
         cout << "\nMENU\n";
-        cout << "1. Ingrese los vertices de su figura\n";
-        cout << "2. Ingrese las caras de su figura\n";
-        cout << "3. Salida\n";
+        cout << "1. Ingrese los vertices de su figura"<<endl;
+        cout << "2. Ingrese las caras de su figura"<<endl;
+        cout << "3. Ver figura"<<endl;
+        cout << "4. Salida"<<endl;
         cout << "Seleccione una opción: ";
         cin >> a;
 
@@ -32,12 +35,6 @@ int main() {
             case 2: {
                 cout << "Ingrese la cantidad de caras de su figura: ";
                 cin >> c;
-
-                
-                int* verticesPorCara = new int[c];
-                int** caras = new int*[c];
-
-                
                 for (int i = 0; i < c; i++) {
                     cout << "Ingrese el número de vértices de la cara " << i + 1 << ": ";
                     cin >> verticesPorCara[i];
@@ -49,6 +46,12 @@ int main() {
                         cin >> caras[i][j];
                     }
                 }
+                
+                break;
+            }
+
+            case 3:
+                cout << "Los datos ingresados son:"<<endl;
                 cout << "\nLista de coordenadas:\n";
                 for (int i = 0; i < b; i++) {
                     cout << "V" << i + 1 << ": (" 
@@ -72,17 +75,13 @@ int main() {
                     }
                     
                 }
+            case 4:
+            cout << "Saliendo del programa...\n";
                 break;
-            }
-
-            case 3:
-                cout << "Saliendo del programa...\n";
-                break;
-
             default:
                 cout << "Opción no válida, intente de nuevo.\n";
         }
-    } while (a != 3); 
+    } while (a != 4); 
 
     return 0;
 }
