@@ -18,7 +18,7 @@ El código se basa en construir arreglos para hacer operaciones con estos y asi 
 La otra base estructural del código es la lista dinámica que en el caso de C++ se manejo con un loop de DO-WHILE, por su parte Python se realizó con un input que consistia en oprimir la tecla ENTER.Esto con el fin de simepre volver al menú principal al terminar cada acción.
 
 Algo que hay que tener en cuenta para ambos lenguajes en el caso de este código es que como se tiene un menu cuyas acciones son dependientes de las otras opciones, hay que declarar las listas a usar al inicio haciendolas globales.
-## Como ejecuatar el código
+## Como ejecutar el código
 ### C++
 
 Para abrir el archivo en C++ se puede copiar el código a VisualStudioCode, en donde guardas el archivo como .cpp y se abre la terminal del computador, cabe aclarar que para esto se debe tener previamente instalado g++ que es el compilador de este lenguaje, entonces ya en la terminal se busca el archivo, se abre g++ y se le da el archivo y este automáticamente corre. 
