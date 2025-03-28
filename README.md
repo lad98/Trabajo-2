@@ -20,4 +20,8 @@ La otra base estructural del código es la lista dinámica que en el caso de C++
 Algo que hay que tener en cuenta para ambos lenguajes en el caso de este código es que como se tiene un menu cuyas acciones son dependientes de las otras opciones, hay que declarar las listas a usar al inicio haciendolas globales.
 ## Como ejecuatar el código
 ### C++
+
+Para abrir el archivo en C++ se puede copiar el código a VisualStudioCode, en donde guardas el archivo como .cpp y se abre la terminal del computador, cabe aclarar que para esto se debe tener previamente instalado g++ que es el compilador de este lenguaje, entonces ya en la terminal se busca el archivo, se abre g++ y se le da el archivo y este automáticamente corre. 
 ### Python 
+
+Como se trabajó en Googlecolab y se importo a este repositorio solo se le da click en la parte de arriba en abrir con Colab y desde alli se redirige a esta sitio en donde se puede ver y probar el código.
